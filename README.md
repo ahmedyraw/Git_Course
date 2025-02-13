@@ -67,6 +67,11 @@ Untracked files:
         ahmed.txt
 ```
 ### git reset
-syntax: git reset head FileName\
-ex: git reset head ahmed.txt\
-now this file is only in Working Directory and remove from Staging Area
+syntax: ```git reset head FileName```\
+ex: ```git reset head ahmed.txt```\
+now this file is only in Working Directory and remove from Staging Area but how know? run ```git status``` you will see the following output:
+```
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ahmed.txt
+```
