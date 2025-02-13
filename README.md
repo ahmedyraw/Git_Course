@@ -32,5 +32,5 @@ Working Directory & Staging Area & Local Repo are all part of Local Repo.\
 Working Directory -```git add```> Staging Area -```git commit```> Local Repo -```git push```> Remote Repo\
 Remote Repo -```git fetch```> Local Repo\
 Local Repo -```git checkout```> Working Directory\
-Local Repo -```git merge```> Working Directory\ \
+Local Repo -```git merge```> Working Directory \ \
 syntax:
