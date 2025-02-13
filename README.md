@@ -59,3 +59,11 @@ Changes to be committed:
         new file:   css/main.css.txt
         new file:   index.html.txt
 ```
+All of this files are in Staging Area and are needed to go to Local Repo but what if there are some file you don't want them in the repo?\
+lets say you added a file name ahmed.txt run ```git status``` you will see the following output:
+```
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ahmed.txt
+```
+
