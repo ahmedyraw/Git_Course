@@ -14,7 +14,7 @@ syntax: git clone RepoName
 ex: git clone https://github.com/example/Git_Course.git
 
 ## Add And Reset And Commit & Explain Progress
-syntax: git status
+syntax: ```git status```<br/>
 ouput example:
 {
 Untracked files:
