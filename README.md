@@ -143,4 +143,13 @@ syntax: ```git push RemoteRepoName BranchName```\
 ex: ```git push origin main```\
 output example:
 ```
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 373.75 KiB | 31.15 MiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/ahmedyraw/Git_Course.git
+   c739d2c..5b14288  main -> main
 ```
