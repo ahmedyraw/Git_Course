@@ -34,4 +34,7 @@ Working Directory -```git add```> Staging Area -```git commit```> Local Repo -``
 Remote Repo -```git fetch```> Local Repo\
 Local Repo -```git checkout```> Working Directory\
 Local Repo -```git merge```> Working Directory<br/><br/>
+
+### git add
+
 syntax:
