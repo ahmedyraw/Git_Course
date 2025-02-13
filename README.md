@@ -66,4 +66,7 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         ahmed.txt
 ```
-
+### git reset
+syntax: git reset head FileName\
+ex: git reset head ahmed.txt\
+now this file is only in Working Directory and remove from Staging Area
