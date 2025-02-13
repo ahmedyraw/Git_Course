@@ -39,7 +39,7 @@ Local Repo -```git merge```> Working Directory
 syntax: ```git add FilePath or *```\
 ex1: ```git add css```\
 ex2: ```git add css index.html```\
-ex3: ```git add *```
+ex3: ```git add *``` star is wild card means all
 
 output example:
 ```
@@ -49,3 +49,5 @@ Changes to be committed:
         new file:   css/main.css.txt
         new file:   index.html.txt
 ```
+
+a
