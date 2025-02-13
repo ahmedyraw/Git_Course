@@ -10,8 +10,8 @@ the readme file extension is md "Markdown" you can check it here<br/>
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br/>
 
 ## Clone it
-syntax: git clone RepoName
-ex: git clone https://github.com/example/Git_Course.git
+syntax: ```git clone RepoName```
+ex: ```git clone https://github.com/example/Git_Course.git```
 
 ## Add And Reset And Commit & Explain Progress
 syntax: ```git status```<br/>
