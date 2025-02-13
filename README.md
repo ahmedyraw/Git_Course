@@ -17,11 +17,11 @@ ex: git clone https://github.com/example/Git_Course.git
 syntax: ```git status```<br/>
 ouput example:
 {
-Untracked files:
+```Untracked files:
   (use "git add <file>..." to include in what will be committed)
         css/
         index.html.txt
-nothing added to commit but untracked files present (use "git add" to track)
+nothing added to commit but untracked files present (use "git add" to track)```
 }
 This mean there are two files name css and index.html that our remote repo doesn't know anything about it,
 you must add them to staging area then commit then push them to remote area
