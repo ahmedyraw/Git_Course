@@ -39,7 +39,7 @@ Local Repo -```git merge```> Working Directory
 syntax: ```git add FilePath or *```\
 ex1: ```git add css```\
 ex2: ```git add css index.html```\
-ex3: ```git add *```\
+ex3: ```git add *```
 
 output example:
 ```
