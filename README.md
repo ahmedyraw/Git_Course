@@ -78,3 +78,5 @@ Untracked files:
 ```
 
 ### git commit
+syntax: ```git commit -m "description"```
+ex: ```git commit -m "Created the main project structure."```
