@@ -38,5 +38,14 @@ Local Repo -```git merge```> Working Directory
 ### git add
 syntax: ```git add FilePath or *```\
 ex1: ```git add css```\
-ex2: ```git add css index.html```
-ex3: ```git add *```
+ex2: ```git add css index.html```\
+ex3: ```git add *```<br/><br/>
+
+output example:
+```
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Stages.png
+        new file:   css/main.css.txt
+        new file:   index.html.txt
+```
