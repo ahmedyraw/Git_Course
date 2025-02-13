@@ -1,11 +1,11 @@
 # Git_Course
 
 ## Create Repo
-You can create Repo using Github UI then diceide if it's public or private also if you want a read me file
-1- Go to your repositories
-2- Press new, and name it
-3- Private or Public
-4- Readme file
+You can create Repo using Github UI then diceide if it's public or private also if you want a read me file\newline
+1- Go to your repositories\newline
+2- Press new, and name it\newline
+3- Private or Public\newline
+4- Readme file\newline
 
 the readme file extension is md "Markdown" you can check it here 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
