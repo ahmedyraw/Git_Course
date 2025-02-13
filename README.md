@@ -41,7 +41,7 @@ ex1: ```git add css```\
 ex2: ```git add css index.html```\
 ex3: ```git add *```\
 
-output example:\
+output example:
 ```
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
