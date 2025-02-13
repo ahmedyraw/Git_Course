@@ -130,3 +130,17 @@ output example:
 * main
 ```
 will list all branches that are in Local Repo, main -> origin, main is Local Repo, origin is Remote Repo "github, gitlab, etc.."
+### git remote
+syntax: ```git remote -v```\
+output example:
+```
+origin  https://github.com/ahmedyraw/Git_Course.git (fetch)
+origin  https://github.com/ahmedyraw/Git_Course.git (push)
+```
+will return the origin "Remote Repo"
+### git push
+syntax: ```git push RemoteRepoName BranchName```\
+ex: ```git push origin main```\
+output example:
+```
+```
