@@ -121,4 +121,12 @@ nothing to commit, working tree clean
 
 if there are more files you added to working directory and you want to push them don't push the current state unitl you add them to Staging Area and commit them to Local Repo them you push.
 
-### git push
+## Push Local Changes To Remote Repository
+now everhing is commited in Local Repo
+### git branch
+syntax: ```git branch```\
+output example:
+```
+* main
+```
+will list all branches that are in Local Repo, main -> origin, main is Local Repo, origin is Remote Repo "github, gitlab, etc.."
