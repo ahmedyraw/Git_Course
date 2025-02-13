@@ -50,4 +50,11 @@ Changes to be committed:
         new file:   index.html.txt
 ```
 
-a
+Now after all untracked files are added to Staging Area if you run ```git status``` you will see the following output:
+```
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Stages.png
+        new file:   css/main.css.txt
+        new file:   index.html.txt
+```
