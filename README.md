@@ -78,5 +78,34 @@ Untracked files:
 ```
 
 ### git commit
-syntax: ```git commit -m "description"```
-ex: ```git commit -m "Created the main project structure."```
+syntax: ```git commit -m "description"```\
+ex: ```git commit -m "Created the main project structure."```\
+output example:
+```
+[main 3345bd2] Created the main project structure.
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Stages.png
+ create mode 100644 css/main.css.txt
+ create mode 100644 index.html.txt
+```
+maybe you will see the following output:
+```
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anything.(none)')
+```
+here just run those two commands in first add your eamil and sceond your github/gitlab/etc.. name
+```
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
