@@ -37,7 +37,7 @@ Local Repo -```git checkout```> Working Directory\
 Local Repo -```git merge```> Working Directory
 
 ### git add
-syntax: ```git add FilePath or *```\
+syntax: ```git add FileName or *```\
 ex1: ```git add css```\
 ex2: ```git add css index.html```\
 ex3: ```git add *``` star is wild card means all
