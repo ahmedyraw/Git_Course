@@ -23,6 +23,5 @@ Untracked files:
         index.html.txt
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-
 This mean there are two files name css and index.html that our remote repo doesn't know anything about it,
 you must add them to staging area then commit then push them to remote area
