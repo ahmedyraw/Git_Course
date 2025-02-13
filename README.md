@@ -88,6 +88,7 @@ output example:
  create mode 100644 css/main.css.txt
  create mode 100644 index.html.txt
 ```
+Now all the files are commited and in Local Repo\
 maybe you will see the following output:
 ```
 Author identity unknown
@@ -104,8 +105,20 @@ Omit --global to set the identity only in this repository.
 
 fatal: unable to auto-detect email address (got 'anything.(none)')
 ```
-here just run those two commands in first add your eamil and sceond your github/gitlab/etc.. name
+here just run those two commands in first add your email and sceond your github/gitlab/etc.. name
 ```
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 ```
+now run ```git status``` to see status you will see the following output:
+```
+On branch main
+Your branch is ahead of 'origin/main' by 1 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+if there are more files you added to working directory and you want to push them don't push the current state unitl you add them Staging Area and commit them to Local Repo them you push.
+
+### git push
