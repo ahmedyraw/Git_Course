@@ -29,4 +29,7 @@ This mean there are two files name css and index.html that our remote repo doesn
 you must add them to staging area then commit then push them to remote area\
 
 Working Directory & Staging Area & Local Repo are all part of Local Repo.\
-Working Directory -```git add```> Staging Area -```git commit```> Local Repo -```git push```> Remote Repo
+Working Directory -```git add```> Staging Area -```git commit```> Local Repo -```git push```> Remote Repo\
+Remote Repo -```git fetch```> Local Repo\
+Local Repo -```git checkout```> Working Directory\
+Local Repo -```git merge```> Working Directory
