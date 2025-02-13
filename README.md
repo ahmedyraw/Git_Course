@@ -8,7 +8,7 @@ You can create Repo using Github UI then diceide if it's public or private also 
 4- Readme file<br/><br/>
 the readme file extension is md "Markdown" you can check it here\
 After you finish an link will be auto generated that points for the remote repo\
-[https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax]<br/>
+[Markdown documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)<br/>
 
 ## Clone it
 syntax: ```git clone RepoName```\
