@@ -172,3 +172,20 @@ git add css\main.css
 git commit -m "Modified the css file"
 git push origin main
 ```
+sometime your push will be rejected as this:
+```
+To https://github.com/ahmedyraw/Git_Course.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ahmedyraw/Git_Course.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+all what you need to do is:
+```
+git pull origin main --rebase
+git rebase --continue
+git push origin main
+```
