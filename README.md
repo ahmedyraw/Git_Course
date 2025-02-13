@@ -6,7 +6,7 @@ You can create Repo using Github UI then diceide if it's public or private also 
 2- Press new, and name it\
 3- Private or Public\
 4- Readme file\
-the readme file extension is md "Markdown" you can check it here 
+\the readme file extension is md "Markdown" you can check it here 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
 ## Clone it
