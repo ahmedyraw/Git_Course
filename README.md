@@ -15,6 +15,7 @@ syntax: ```git clone RepoLink```\
 ex: ```git clone https://github.com/example/Git_Course.git```
 
 ## Add And Reset And Commit & Explain Progress
+After you finish your Working Directory all it's content will be untracked you can check it by:
 ### git status
 syntax: ```git status```<br/>
 ouput example:
