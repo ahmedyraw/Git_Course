@@ -1,2 +1,3 @@
 # Git_Course
-Git Course
+
+## Create Repo and Clone it
