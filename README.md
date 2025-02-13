@@ -11,7 +11,7 @@ After you finish an link will be auto generated that points for the remote repo\
 [Markdown documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)<br/>
 
 ## Clone it
-syntax: ```git clone RepoName```\
+syntax: ```git clone RepoLink```\
 ex: ```git clone https://github.com/example/Git_Course.git```
 
 ## Add And Reset And Commit & Explain Progress
