@@ -153,3 +153,22 @@ remote: Resolving deltas: 100% (3/3), done.
 To https://github.com/ahmedyraw/Git_Course.git
    c739d2c..5b14288  main -> main
 ```
+if you go to your repository and relode it you will see N commits try browse it also you will see the description with each commit.\
+lets now edit the main.css file located in css folder after editing the file run ```git status``` you will see the following output:
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/main.css.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+you need to do the following:
+```
+git add css\main.css
+git commit -m "Modified the css file"
+git push origin main
+```
