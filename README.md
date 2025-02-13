@@ -59,13 +59,14 @@ Changes to be committed:
         new file:   css/main.css.txt
         new file:   index.html.txt
 ```
-All of this files are in Staging Area and are needed to go to Local Repo but what if there are some file you don't want them in the repo?\
+All of this files are in Staging Area and are needed to go to Local Repo but what if there are some file you don't want them in the Local Repo?\
 lets say you added a file name ahmed.txt run ```git status``` you will see the following output:
 ```
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         ahmed.txt
 ```
+
 ### git reset
 syntax: ```git reset head FileName```\
 ex: ```git reset head ahmed.txt```\
@@ -75,3 +76,5 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         ahmed.txt
 ```
+
+### git commit
