@@ -119,6 +119,6 @@ Your branch is ahead of 'origin/main' by 1 commits.
 nothing to commit, working tree clean
 ```
 
-if there are more files you added to working directory and you want to push them don't push the current state unitl you add them Staging Area and commit them to Local Repo them you push.
+if there are more files you added to working directory and you want to push them don't push the current state unitl you add them to Staging Area and commit them to Local Repo them you push.
 
 ### git push
