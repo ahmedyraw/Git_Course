@@ -36,4 +36,6 @@ Local Repo -```git checkout```> Working Directory\
 Local Repo -```git merge```> Working Directory
 
 ### git add
-syntax:
+syntax: ```git add FilePath or *```\
+ex1: ```git add css/main.css```\
+ex2: ```git add *```
