@@ -283,5 +283,15 @@ provided link is by SSH not HTTPS.\
 -u means pull then push to avoid conflects.\
 ## Pull Request
 Pull request is to ask onwers to push your changes to Remote Repo.\
-RepoOwner[the repo we want to fork it and pull request], RepoCloner [fork repo]
-So first let's fork a repo
+RepoOwner [the repo we want to fork it and pull request], RepoCloner [the forked repo]\
+So first let's fork a repo, after we forked the repo and make our changes we need to commit the changes./
+there is 2 ways:\
+### 1- Commit directly to ```master``` or ```main``` branch.
+all the changes are now commited on our master or main branch inside RepoCloner.\
+now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,/
+Create a pull request, wait until RepoOwner to merge it.\
+### 2- Create a new branch for this commit and start a pull request
+here we create a secondary branch and commit our change on it.\
+first pull request is from our secondary branch to our master or main branch.\
+now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,/
+Create a pull request, wait until RepoOwner to merge it.\
