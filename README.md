@@ -8,7 +8,7 @@ You can create Repo using Github UI then diceide if it's public or private also 
 4- Readme file<br/><br/>
 the readme file extension is md "Markdown" you can check it here\
 After you finish an link will be auto generated that points for the remote repo\
-[Markdown documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)<br/>
+[Markdown documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## Clone Remote Repo to a Local Repo
 syntax: ```git clone RepoLink```\
@@ -17,7 +17,7 @@ ex: ```git clone https://github.com/example/Git_Course.git```
 ## Add And Reset And Commit & Explain Progress
 After you finish your Working Directory all it's content will be untracked you can check it by:
 ### git status
-syntax: ```git status```<br/>
+syntax: ```git status```\
 ouput example:
 ```
 Untracked files:
@@ -79,7 +79,7 @@ Untracked files:
 
 ### git commit
 syntax: ```git commit -m "description"```\
-ex: ```git commit -m "Created the main project structure."```\
+ex: ```git commit -m "Created the main project structure."```
 output example:
 ```
 [main 3345bd2] Created the main project structure.
@@ -288,15 +288,75 @@ So first let's fork a repo, after we forked the repo and make our changes we nee
 there is 2 ways:
 ### 1- Commit directly to ```master``` or ```main``` branch.
 all the changes are now commited on our master or main branch inside RepoCloner.\
-now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,/
+now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,\
 Create a pull request, wait until RepoOwner to merge it.
 ### 2- Create a new branch for this commit and start a pull request
 here we create a secondary branch and commit our change on it.\
 first pull request is from our secondary branch to our master or main branch.\
-now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,/
+now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,\
 Create a pull request, wait until RepoOwner to merge it.
 ## Aliases
-syntax: ```git config --global alias.AliasName command```
-ex1: ```git config --global alias.st status```
+syntax: ```git config --global alias.AliasName command```\
+ex1: ```git config --global alias.st status```\
 ex2: ```git config --global alias.cm "commit -m"```
 ## Branching And Merging
+### show branches
+syntax: ```git branch```
+### create new branch
+syntax: ```git branch BranchName```
+### switch to other branch
+syntax: ```git checkout BranchName```
+### safe delete branch
+will delete the branch only if it's merged to main or master branch.\
+syntax: ```git branch -d BranchName```\
+output example: ```error: the branch 'BranchName' is not fully merged```
+### force delete branch
+will delete the branch anyway.\
+syntax: ```git branch -D BranchName```
+### create new branch and switch to
+syntax: ```git checkout -b BranchName```
+### rename branch
+syntax: ```git branch -m NewBranchName```
+### merge branch
+syntax:
+```
+git checkout main or master
+git merge BranchName
+```
+now you can delete the merged branch and push the main or master branch ```git push origin main or master```\
+### Branch can be:
+#### 1- merged with master or main branch then push the master or main branch
+steps:
+```
+git checkout main or master
+git merge BranchName
+git branch -d BranchName
+git push origin main or master
+```
+output example:
+```
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:ahmedyraw/Branching.git
+   a8e5562..a8ddcda  main -> main
+```
+#### 2- pull request "directly push it"
+steps:
+```
+git push origin BranchName
+```
+output example:
+```
+Enumerating objects: 3, done.                                      
+Counting objects: 100% (3/3), done.                                
+Delta compression using up to 24 threads                           
+Compressing objects: 100% (2/2), done.                             
+Writing objects: 100% (2/2), 263 bytes | 263.00 KiB/s, done.       
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)      
+remote:                                                            
+remote: Create a pull request for 'Scroll' on GitHub by visiting:  
+remote:      https://github.com/ahmedyraw/Branching/pull/new/Scroll
+remote:                                                            
+To github.com:ahmedyraw/Branching.git                              
+ * [new branch]      Scroll -> Scroll                              
+```
+after this command you will see in github there is pull request from BranchName to master or main.
