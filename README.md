@@ -208,7 +208,7 @@ if you try to create a file as a member you will see that you can:\
 for now choose 1, you will notice as onwer that the file is not in your Working Directory, it's in Remote Repo, how to get it in Working Directory?\
 run ```git status``` it will not show anything untracked, to commit or to push
 ### git pull
-git fetch then git merge "Remote Repo content is fetched and merged with Local Repo content into Working Directory in Local Repo"
+git fetch then git merge "Remote Repo content is fetched and merged with Local Repo content into Working Directory in Local Repo"\
 syntax: ```git pull RemoteRepo```\
 ex:```git pull origin```\
 output example:
@@ -227,3 +227,18 @@ Fast-forward
  2 files changed, 30 insertions(+)                                   
  create mode 100644 authors.txt                                      
 ```
+## Everything About Git Configurations
+### git config manual
+syntax: ```git help config```
+### git config
+will list all configurations\
+syntax: ```git config --list```
+syntax: ```git config -l```
+#### show config
+syntax: ```git config --global configuration```\
+ex1: ```git config --global user.email```\
+ex2: ```git config --global user.name```
+#### edit config
+syntax: ```git config --global configuration "value"```\
+ex1: ```git config --global user.email "ahmed@gmail.com"```\
+ex2: ```git config --global user.name "ahmed"```
