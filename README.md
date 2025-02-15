@@ -201,3 +201,29 @@ The Repo Onwer must give you permission, navigate Settings -> Collaborators -> e
 you will receive an email with the invitation -> accept/decline -> now you're in the team.\
 as a member of the team you add files without the need of fork.\
 repo will not be shown in member repositories they can access if from onwer repositorise.\
+if you try to create a file as a member you will see that you can:\
+1- commit directly to the ```main``` branch\
+2- create a new branch for this commit and start a pull request\
+
+for now choose 1, you will notice as onwer that the file is not in your Working Directory, it's in Remote Repo, how to get it in Working Directory?\
+run ```git status``` it will not show anything untracked, to commit or to push
+### git pull
+git fetch then git merge "Remote Repo content is fetched and merged with Local Repo content into Working Directory in Local Repo"
+syntax: ```git pull RemoteRepo```\
+ex:```git pull origin```\
+output example:
+```
+remote: Enumerating objects: 11, done.                               
+remote: Counting objects: 100% (11/11), done.                        
+remote: Compressing objects: 100% (8/8), done.                       
+remote: Total 9 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 3.50 KiB | 39.00 KiB/s, done.         
+From https://github.com/ahmedyraw/Git_Course                         
+   abf1813..f75d9e4  main       -> origin/main                       
+Updating abf1813..f75d9e4                                            
+Fast-forward                                                         
+ README.md   | 29 +++++++++++++++++++++++++++++                      
+ authors.txt |  1 +                                                  
+ 2 files changed, 30 insertions(+)                                   
+ create mode 100644 authors.txt                                      
+```
