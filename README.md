@@ -279,4 +279,9 @@ after that go to github, Create a new Repo then:
 git remote add origin git@github.com:ahmedyraw/temp_course.git
 git push -u origin main
 ```
+provided link is by SSH not HTTPS.\
 -u means pull then push to avoid conflects.\
+## Pull Request
+Pull request is to ask onwers to push your changes to Remote Repo.\
+RepoOwner[the repo we want to fork it and pull request], RepoCloner [fork repo]
+So first let's fork a repo
