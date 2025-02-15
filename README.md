@@ -232,8 +232,11 @@ Fast-forward
 syntax: ```git help config```
 ### git config
 will list all configurations\
-syntax: ```git config --list```
-syntax: ```git config -l```
+note: you will see duplicated entries why? git will list configurations from different place to see from which place these configuration came add ```--show-origin```\
+syntax: ```git config --list```\
+syntax: ```gif config --list --show-origin```\
+syntax: ```git config -l```\
+syntax: ```gif config -l --show-origin```
 #### show config
 syntax: ```git config --global configuration```\
 ex1: ```git config --global user.email```\
