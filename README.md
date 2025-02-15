@@ -89,6 +89,7 @@ output example:
  create mode 100644 index.html.txt
 ```
 Now all the files are commited and in Local Repo\
+also if you delete a file you need to commit it\
 maybe you will see the following output:
 ```
 Author identity unknown
@@ -189,3 +190,14 @@ git pull origin main --rebase
 git rebase --continue
 git push origin main
 ```
+## Pull Changes From Remote Repository
+if navigate to other repositories that are not yours, you will see create file option if press it the Repo will be cloned as yours repo.\
+at the onwer account of this repo you can see at fork that the number increses from 0 to 1,\
+this means that someone fork the project to its own.<br/><br/>
+how to delete a repo?\
+navigate to the Repo -> settings -> Danger Zone -> delete this repository -> enter repo name<br/><br/>
+but if you want to be a member in the team how?\
+The Repo Onwer must give you permission, navigate Settings -> Collaborators -> enter your name -> add collaborators\
+you will receive an email with the invitation -> accept/decline -> now you're in the team.\
+as a member of the team you add files without the need of fork.\
+repo will not be shown in member repositories they can access if from onwer repositorise.\
