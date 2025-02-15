@@ -253,3 +253,17 @@ syntax2: ``` git config --global --unset configuration```\
 ex: ```git config --global --unset user.name```
 #### edit config using editor
 syntax: ```git config --global --edit```
+
+## Generate And Test Github Public Key
+Secure Shell (SSH) protocol is a method for securely sending commands to a computer over an unsecured network.\
+SSH uses cryptography to authenticate and encrypt connections between devices.\
+### Generate Public Key
+syntax: ```ssh-keygen -t AlgorithmType -b NumberOfBytes -C "Your Email"```\
+ex: ```ssh-keygen -t rsa -b 4096 -C "ahmed@gmail.com"```\
+###  Cat
+cat will show content of any file.\
+syntax: ```cat FilePath```\
+go to your github account Navigate to -> settings -> SSH and GPG keys -> add new SSH key,\
+name your key, and paste it's content.\
+### validate your SSH key authentication
+syntax: ```ssh -T git@github.com```\
