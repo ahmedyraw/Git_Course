@@ -264,6 +264,19 @@ ex: ```ssh-keygen -t rsa -b 4096 -C "ahmed@gmail.com"```\
 cat will show content of any file.\
 syntax: ```cat FilePath```\
 go to your github account Navigate to -> settings -> SSH and GPG keys -> add new SSH key,\
-name your key, and paste it's content.\
+name your key, and paste it's content.
 ### validate your SSH key authentication
-syntax: ```ssh -T git@github.com```\
+syntax: ```ssh -T git@github.com```
+## Create Repository From Existing Project
+in terminal, open you repo folder then:
+```
+git init
+git add
+git commit -m ""
+```
+after that go to github, Create a new Repo then:
+```
+git remote add origin git@github.com:ahmedyraw/temp_course.git
+git push -u origin main
+```
+-u means pull then push to avoid conflects.\
