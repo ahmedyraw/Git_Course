@@ -284,7 +284,7 @@ provided link is by SSH not HTTPS.\
 ## Pull Request
 Pull request is to ask onwers to push your changes to Remote Repo.\
 RepoOwner [the repo we want to fork it and pull request], RepoCloner [the forked repo]\
-So first let's fork a repo, after we forked the repo and make our changes we need to commit the changes./
+So first let's fork a repo, after we forked the repo and make our changes we need to commit the changes.\
 there is 2 ways:
 ### 1- Commit directly to ```master``` or ```main``` branch.
 all the changes are now commited on our master or main branch inside RepoCloner.\
@@ -295,3 +295,8 @@ here we create a secondary branch and commit our change on it.\
 first pull request is from our secondary branch to our master or main branch.\
 now navigate to pull request, you will see that the pull request from RepoCloner to RepoOwner,/
 Create a pull request, wait until RepoOwner to merge it.
+## Aliases
+syntax: ```git config --global alias.AliasName command```
+ex1: ```git config --global alias.st status```
+ex2: ```git config --global alias.cm "commit -m"```
+## Branching And Merging
