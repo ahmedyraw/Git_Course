@@ -232,7 +232,8 @@ Fast-forward
 syntax: ```git help config```
 ### git config
 will list all configurations\
-note: you will see duplicated entries why? git will list configurations from different place to see from which place these configuration came add ```--show-origin```\
+note: you will see duplicated entries why?\
+git will list configurations from different place to see from which place these configuration came add ```--show-origin```\
 syntax: ```git config --list```\
 syntax: ```gif config --list --show-origin```\
 syntax: ```git config -l```\
@@ -245,3 +246,10 @@ ex2: ```git config --global user.name```
 syntax: ```git config --global configuration "value"```\
 ex1: ```git config --global user.email "ahmed@gmail.com"```\
 ex2: ```git config --global user.name "ahmed"```
+##### unset config
+syntax1: ```git config --global configuration = ""```\
+ex: ```git config --global user.name = ""```\
+syntax2: ``` git config --global --unset configuration```\
+ex: ```git config --global --unset user.name```
+#### edit config using editor
+syntax: ```git config --global --edit```
