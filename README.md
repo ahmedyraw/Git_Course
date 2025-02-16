@@ -394,4 +394,123 @@ To github.com:ahmedyraw/Branching.git
  * [new branch]      Scroll -> Scroll                              
 ```
 after this command you will see in github there is pull request from BranchName to master or main.
-## Mastering Stash
+
+## Mastering Stash Part1
+Stash is place to save files without the need to commit them right now.\
+which files are saved into stash? only files that are in Staging Area (added).\
+if you try to use ``ls`` command after perform ```git stash``` command you cannot see the files.\
+step1:
+```
+touch index.html
+touch about.html
+echo "hello world" > about_readme.txt
+```
+step2:
+```
+git add *
+```
+step3:
+```
+git status
+```
+this will output that you need to commit the 3 files how to ignore this now?\
+step4:
+```
+git stash
+```
+output:
+```
+Saved working directory and index state WIP on main: 46209b1 Initial commit
+```
+step5:
+```
+git status
+```
+output:
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+how to return files from stash?\
+step6:
+```
+git stash pop
+```
+output:
+```
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   about_readme.txt
+        new file:   index.html
+
+Dropped
+```
+how to check if stash contaning any files?\
+step7:
+```
+git stash list
+```
+## Mastering Stash Part2
+note this example to see how stash is storing files,\
+step1:
+```
+touch a.txt
+git add a.txt
+git stash
+
+touch b.txt
+git add b.txt
+git stash
+```
+now if we run ```git stash list``` after stashing the ```a.txt file``` you will see this output:
+```
+stash@{0}: WIP on main: ac474b2 Home page created
+```
+now if we run ```git stash list``` after stashing the ```b.txt file``` you will see this output:
+```
+stash@{0}: WIP on main: ac474b2 Home page created
+stash@{1}: WIP on main: ac474b2 Home page created
+```
+note that they are stored in different places.\
+you would be asking your self how to differentiate between those stashes, see this command,\
+```
+touch c.txt
+git add c.txt
+git stash save "c.txt file saved here"
+git stash list
+```
+output:
+```
+stash@{0}: On main: c.txt file saved here
+stash@{1}: WIP on main: ac474b2 Home page created
+stash@{2}: WIP on main: ac474b2 Home page created
+```
+now the key question is if we run ```git stash pop``` which one will be popped out first?\
+by default, it will pop out the recent stash.\
+we can use apply, but what is the differenece between applay and pop?\
+pop take changes back to Staging Area and deletes Stash,\
+but apply take changes back to Staging Area also but doesn't delete Stash.\
+but is there are any way to pop a certain stash?\
+yes using pop with stash id for example:
+```
+git stash pop stash@{2}
+```
+lest drop or delete stash:\
+by default, it will drop the recent stash.
+```
+git stash drop
+git stash drop StashId
+```
+### see stash content
+syntax1: ```git stash show```\
+syntax2: ```git stash show StashID```
+### clear all stashes
+syntax: ```git stash clear```
+## Search for branching from stash
