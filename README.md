@@ -514,3 +514,48 @@ syntax2: ```git stash show StashID```
 ### clear all stashes
 syntax: ```git stash clear```
 ## Search for branching from stash
+## Restore and Clean
+step1: create a file
+```touch new.txt```
+step2: run git status
+```git status```\
+new.txt file is untracked.\
+step3: add your file into Staging Area
+```git add new.txt```\
+also you can add via VSCode -> right click -> stage changes.\
+step4: unstage new.txt file from Staging Area
+```git restore --staged new.txt```\
+also you can do it via VSCode -> right click -> unstage changes.<br/><br/>
+now let's imagin that you create another 2 file called new2.txt and new3.txt,\
+and you want to unstage files and delete all of them except for new2.txt you want to keep it.\
+step1: run the clean info command:
+```git clean -n```
+output example:
+```
+Would remove new.txt
+Would remove new2.txt
+Would remove new3.txt
+```
+step2: add the files you want to keep to Staging Area
+```git add new2.txt```\
+step3: re run clean info command to make sure of the files will be deleted.\
+step4: run the clean command
+```git clean -f```\
+output example:
+```
+Removing new.txt
+Removing new3.txt
+```
+## Resetting The Head
+General information:\
+when you clone a repo don't create a directory for it, it will be already a directory with repo name.\
+Origin is remot repo, main is local repo.\
+Workflow: Working Directory -(add)> Staging Area -(commit)> Local Repo -(push)> Remote Repo.\
+every bit change in any file need to readd the file and recommit it.\
+The Head is a pointer points at the last commit.\
+If you want to delete a commit change the Head.\
+Each commit has a hash code you can see it through ```git log``` or UI.\
+### delete changes in some point related to a commit
+syntax: ```git reset --hard CommitHashCode```\
+output example: ```HEAD is now at efb93f8 the good commit```\
+after that: ```git push origin main --force```
