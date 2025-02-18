@@ -559,3 +559,33 @@ Each commit has a hash code you can see it through ```git log``` or UI.\
 syntax: ```git reset --hard CommitHashCode```\
 output example: ```HEAD is now at efb93f8 the good commit```\
 after that: ```git push origin main --force```
+## Ignoring Files And Directories
+so for files you want igonre them, you need to create a .gitignore file.\
+### create .gitignore file
+syntax: ```touch .gitignore```
+### how to ignore the files?
+you need to open the gitignore file and write on it.\
+ex1: ignore all files with .log extension\
+```*.log```\
+ex2: ignore all files with .log extension except for vip.log file\
+```
+*.log
+!vip.log
+```
+ex3: ignore an entire folder called projects\
+```projects/```
+### how to add and push files that are ignored in .gitignore
+lets say that a.txt is ignored and we want to add it we will see an output like this:
+```
+The following paths are ignored by one of your .gitignore files:
+a.txt
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false
+```
+we can add it by using flag force -f
+syntax1: ```git add a.txt -f```\
+syntax2: ```git add a.txt --force```\
+### Search for git ignore patterns
+## Tagging And Releasing
+## Git version Controle book and references 
